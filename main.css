@@ -75,13 +75,13 @@ html, body {
 	text-align:center;
 	color:#f25a57;
 	font-size: 50px;
-	margin-bottom:25px;
 }
 
 /*Footer*/
 .footer {
 	background-color:#f25a57;
 	color:#fff;
+	margin-top:25px;
 }
 
 /*about me*/
@@ -95,43 +95,43 @@ html, body {
 }
 
 /*Portfolio*/
+
+.portfolio .container {
+	width:100%;
+}
+
 .portfolio .container h2{
 	color:#FFD7D6;
-	background-color:#401C1F;
+	background-color:#98004a;
 	font-size: 25px;
 	border: none;
 	text-align:center;
 	margin: 0;
 	padding: 25px 0;
 }
-.portfolio .container h5 {
-	color:#FFD7D6;
-	background-color:#7F393E;
+
+.projects23 .container{
+	margin-bottom:25px;
+}
+
+#projects1a {
+	border-top: 2px solid #98004a;
+	border-bottom:2px solid #98004a;
+	margin:10px;
+}
+
+.projects p {
+	text-align:left;
+	color:#98004a;
+	margin-top: 100px;
+}
+.projects23 p{
 	text-align:center;
-	font-family: Arial;
-	border-top: 3px dashed #fff;
-	padding: 10px 0;
-	margin-top:0;
+	color:#98004a;
+	margin-top:10px;
 }
-.portfolio .col-md-4 {
-	color:#401C1F;
-	margin-bottom: 200px;
-	text-align: center;
-}
-.portfolio button {
-	color:#FFD7D6;
-	background-color:#BF555E;
-	margin-bottom: 50px;
-}
-.portfolio button:hover{
-	color:#BF555E;
-	background-color:#FFD7D6;
-}
-
-
-
-
 /*contact form*/
+
 .contact {
 	background: url("https://images.unsplash.com/37/ic1dX3kBQjGNaPQb8Xel_1920%20x%201280.jpg?fit=crop&fm=jpg&h=675&q=80&w=1375") no-repeat center center fixed;
     width:100%;
@@ -171,3 +171,6 @@ input[type="submit"] {
     background-color: #F4A3A1;
     border-radius: 3px;
 } 
+
+/* slide show Portfolio*/
+
