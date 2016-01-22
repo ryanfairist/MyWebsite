@@ -14,7 +14,22 @@
 <body>
   <div id ="Home">
       <div class = "container-fluid">
+        <div id="pink"><img class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/pink_zpse5o4cd6g.png" width=100% height="240"></div>
+                    </div>
+
+                      <div class="tree">
+                          <img id="bkg" width=100% height="240" alt="" class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/treebkg1_zps8wfakphg.png" style="position:absolute; z-index:2;"> 
+                        </div> 
+
+                      <div class="tree2">
+                        <img id="bkg" width=100% height="240" alt="" class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/treefront1_zpspgkcrzat.png"> 
+                    </div>  
+                  </div>                        
+                      
+
+<div class = "container-fluid">
           <div class="jumbotron text-center">
+           
                 <h1>Ryan Fairist Richard</h1>
                 <h1>Front-End Developer</h1>
                 <p>JavaScript, jQuery, CSS3, HTML5, Bootstrap</p>
@@ -133,8 +148,6 @@
             </div>
 
 
-
-
               <!--Footer-->
       <div class="footer">
           <div class="container-fluid">
@@ -155,7 +168,15 @@
 
           
       </div>    
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
 
-      <script></script>
+    $('.tree img').mouseenter(function() {
+             jQuery(this).effect("bounce", {times: 3}, 500);
+    });
+});
+
+      </script>
 </body>
 </html>
