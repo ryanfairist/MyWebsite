@@ -45,6 +45,8 @@ body {
 .projects{
 	background-color:#fff;
 	padding-top:10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .thumbnail img:hover{
 	transform:scale(1.1);
