@@ -105,7 +105,7 @@ body {
 /*contact form*/
 
 .contact {
-	background-color:#FFDCCD;
+	background-color:#ffe6f3;
     width:100%;
     height: 580px;
     background-opacity: 0.4;
@@ -116,7 +116,7 @@ body {
 	margin-top: 100px;
 	margin-bottom: 30px;
 	color:#000;
-	font-family:"Damion", Arial;
+	font-family: Arial;
 	letter-spacing: 2px;
 	text-shadow: 2px 1px #98004a;
 }
