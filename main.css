@@ -104,22 +104,12 @@ body {
 
 /*contact form*/
 
-.contact {
-	background-color:#FFDCCD;
-    width:100%;
-    height: 580px;
-    background-opacity: 0.4;
-    background-filter: alpha(opacity=40);
-    text-align:center;
+#Contact {
+	color:#fff;
+	margin-top:25px;
+	font-size: 25px;
 }
-.contact h1 {
-	margin-top: 100px;
-	margin-bottom: 30px;
-	color:#000;
-	font-family: Arial;
-	letter-spacing: 2px;
-	text-shadow: 2px 1px #98004a;
-}
+   
 
 #name {
 	color:#000;
