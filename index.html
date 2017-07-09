@@ -1,206 +1,405 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="">
 <head>
-  <title>RyanFairist Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="main.css">
-</head>
+  <title>Summer Websites</title>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Ryan's website for summer work" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+
+  
+header .bubble{
+  font-size:55px;
+  color: #fff;
+  font-family: 'Baloo', cursive;
+    z-index: 500;
+    margin-top: 50px;
+    position: absolute;
+     -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    text-shadow: 1px -1px 0 #faf938, -1px 2px 1px #030425, -2px 4px 1px #ff2169, -3px 6px 1px #23cbda, -4px 8px 1px #23cbda, -5px 10px 1px #23cbda, -6px 12px 1px rgb(255, 33, 105);
+ }
+ /*, -7px 14px 1px #ff2169, -8px 16px 1px #ffffff, -9px 18px 1px #ffffff, -10px 20px 1px #faf938, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #ff2169, -19px 38px 1px #ff2169, -20px 40px 1px #23cbda, -21px 42px 1px #23cbda, -22px 44px 1px #23cbda, -23px 46px 1px #faf938, -24px 48px 1px #faf938, -25px 50px 1px #ff2169, -26px 52px 1px #ff2169, -27px 54px 1px #23cbda, -28px 56px 1px #23cbda;*/
+
+.stripes{
+  z-index: -25; 
+}
+.stripe-p{
+  background-color: #FF2169;
+    padding-bottom: 50px;
+}
+.stripe-p:hover{
+  background-color: #faf938;
+}
+.stripe-b{
+  background-color:#23cbda;
+  padding-bottom:50px;
+}
+.stripe-y{
+  background-color: #faf938;
+    padding-bottom: 28px;
+}
+.first-part{
+  margin-top:35px;
+}
+main{
+  color:#071c44;
+}
+.my-navigat{
+  background-color: #faf938;
+    height: 35px;
+}
+.my-nav-item a{
+  text-decoration:none;
+    margin-right:10px;
+    padding:16px;
+    background-color:#faf938;
+    color:#071c44;
+}
+@media (max-width: 767px) {
+.my-nav-item a{
+margin-top: 25px;
+}
+}
+.my-nav-item a:hover{
+  background-color:#FF2169;
+  color:#fff;
+}
+@media (max-width: 767px) {
+ header .bubble{
+  font-size:33px;
+  }
+ }
+
+/*nav over*/
+.first-part, .inlargies{
+  margin-top: 20px;
+}
+  .pad-bot-30{
+    bottom-padding:30px;
+ }
+ .white-bkg{
+  background-color:#fff;
+ }
+ .white-block{
+  height:150px;
+  background-color:#23cbda;
+  color:#fff;
+ }
+.how-it-works{
+  background-color:#faf938;
+  margin-top: 25px;
+}
+.how-it-works h2{
+  margin-bottom:25px;
+  padding-bottom: 30px;
+}
+.how-it-works h3{
+  padding-bottom: 30px;
+}
+ .fa-lightbulb-o:before,  .fa-user-circle-o:before, .fa-hand-spock-o:before{
+  color: #FF2169;
+}
+/*model*/
+.modal-backdrop.in {
+  opacity: 0.9;
+}
+.modal-body  {
+    background-color: #000;
+}
+.about-me-contact{
+  background-color:#FF2169;
+  color:#fff;
+}
+.about-me-contact h2{
+  padding-top: 30px;
+    padding-bottom: 15px;
+}
+.inlargies-block{
+  margin-right:55px;
+}
+/*includes*/
+.price-inclu {
+  border:1px solid #FF2169;
+  height:480px;
+}
+@media (max-width: 360px) {
+  .price-inclu {
+  border:1px solid #FF2169;
+  height:650px;
+  margin-top:15px;
+}
+}
+ /*footer*/
+ footer a{
+  color:#fff;
+ }
+#beem-me-up{
+  position:fixed;
+  background-color:rgb(192,192,192);opacity:0.4;
+  color:#000;
+  display: none; 
+  margin-left:70%; 
+  z-index: 500;
+ }  
+</style>
+<head>
 <body>
-  <section id ="Home">
-      <div class = "container-fluid">
-        <div id="pink"><img class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/pink_zpse5o4cd6g.png" width=100% height="240"></div>
-                    </div>
+  <h1 style="display:none;">Summer Mobile Websites</h1>
+    <header id="home">
+    <div class="container">
+      <div class="col-sm-9 col-sm-offset-2">
+        <p class="text-center bubble">Let's Make 
+        <br/> Your Website Mobile
+        <br/> this Summer!</p>
+         </div>
+  </div>
+  <div class="col-sm-5" style="float: right;">
+    <img src="palm_tree.png" class="image-repsonsivet" alt="model portfolio website palm tree" style="
+    z-index: 50;position: absolute;"></div>
+    <div class="stripes">
+      <div class="stripe-b"></div>
+      <div class="stripe-p"></div>
+      <div class="stripe-y"></div>
+      <div class="stripe-b"></div>
+      <div class="stripe-p"></div>
+      <div class="stripe-y"></div>
+      <div class="stripe-b">
+        <div class="row">
+          <div class="col-xs-12">
+        <div class=" visible-xs col-xs-4 col-xs-offset-2 my-nav-item" >
+          <a class="" href="#examplesHere">Examples</a>
+        </div>
+        <div class=" visible-xs col-xs-offset-1 col-sm-4 my-nav-item" >
+          <a class="" href="#contactMe" style="margin-left: 15px;">Contact</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="stripe-p"></div>
+      <div class="stripe-y"></div>
+    </div>
+  <header>
+  <nav>
+    <div class="my-navigat hidden-xs">
+      <div class="row">
+      <div class="col-sm-offset-2">
+        <div class="col-sm-3 my-nav-item">
+          <a class="" href="#home">Home</a>
+        </div>
+        <div class="col-sm-3 my-nav-item">
+          <a class="" href="#examplesHere">Examples</a>
+        </div>
+        <div class="col-sm-3 my-nav-item">
+          <a class="" href="#pricing">Pricing</a>
+        </div>
+        <div class="col-sm-3 my-nav-item">
+          <a class="" href="#contactMe">Contact</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </nav>  
 
-                      <div class="tree">
-                          <img id="bkg" width=100% height="240" alt="" class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/treebkg1_zps8wfakphg.png" style="position:absolute; z-index:2;"> 
-                        </div> 
+  <main>
+    
+       <div class="white-bkg">
+      <div class="row">
+  <section>
 
-                      <div class="tree2">
-                        <img id="bkg" width=100% height="240" alt="" class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/treefront1_zpspgkcrzat.png"> 
-                    </div>  
-                  </section>                        
-                      
+    <div class="container first-part">
 
-<header class = "container-fluid">
-          <div class="jumbotron text-center">
-           
-                <h1>Ryan Fairist Richard</h1>
-                <h1>Front-End Developer</h1>
-                <p>JavaScript, jQuery, CSS3, HTML5, Bootstrap, AngularJS</p>
-
-                <!--NAVIGATION-->
-               <nav>
-                  <a href ="#Home" class ="btn btn-primary">Home</a>
-                  <a href ="#AboutMe" class ="btn btn-primary">About</a>
-                  <a href ="#portfolio" class ="btn btn-primary">Portfolio</a>
-                  <a href ="#Contact" class ="btn btn-primary">Contact</a> 
-                <nav>
-              </div>
+      <div class="col-sm-6 col-sm-offset-2">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <a href="#home" class="btn btn-default " id="beem-me-up">Scroll<br/>Up</a>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="female_model.jpg" alt="Los Angeles" class="img-responsive" style="width:100%;">
             </div>
-          </header>
 
-
-    <!--About me-->
-    <main id ="AboutMe">
-        <div class="main-1">
-           <div class="container">
-              <div class="row">
-                 <div class="col-sm-6">
-                  <h1>Hello</h1>
-                    <p>I am driven to be successful and to find greatness in all people. I have over 4 years of experience working in the tech world in multiple capacities. A main component at my current position is working directly with CTOs, CIOs, and Lead Developers. Most of my time outside of work is spent discovering tricks and best practices with JavaScript, AngularJS, jQuery, CSS3, Bootstrap, HTML5, and Git.  While in school I created computer animations, web layouts and studied the business marketing side of companies that use web applications. I have great enthusiasm and passion for exploration of new technologies. Currently, I am focused on using all the resources, to produce great web and mobile responsive applications. </br></br>I am a Front-End Developer based out of New York City.</br></br>Let’s do a project together!</p>
-                      </br>
-                     
-                    <a href ="https://github.com/ryanfairist" target="_blank"><img src="http://i1382.photobucket.com/albums/ah266/ryanfairist/github-logo_zpsxce2rpgy.jpg" height="30"></a>
-                  </br></br>
-                  <h6><b>Education Plus</b><h6>
-                      <h6>ITT TECHNICAL INSTITUTE A.A.S, Visual Communications</h6>
-                          <h6>UNIVERSITY OF NEVADA LAS VEGAS B.S., Business Administration Marketing</h6>
-                          <h6>CodeAcdemy NYC, Front-End Development Online Tutorials</h6>
-                          <h6>Girl Develope It NYC, Courses</h6>
-                          <h6>MeetUps for AngularJS at Google</h6>
-                          <h6>WomenWhoCode Algorithms and HackNights</h6>
-                  </div>
-
-              
-
-            <div class="col-sm-6">
-              <img  style="padding-left: 100px;" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/Untitled-1_zps35hpbm9q.jpg" height="60" class="img-responsive" alt="Ryan Fairist"></div>
+            <div class="item">
+              <img src="man_model-desktop.jpg" alt="Chicago" class="img-responsive" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="webdesign_fitness.jpg" alt="New york" class="img-responsive" style="width:100%;">
             </div>
           </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-     </main>
-
-
-<!--Portfolio-->
-        <section class="container-fluid">
-          <div id="portfolio">
-            <div class="well">
-              <h2>I welcome the opportunity to work with amazing people from all over the world.</h2>
-            </div>
-
-           
-<!--projects-->
-
-
-
-    <div class="projects">
-        <div class="container-fluid">
-              <div class= "row">
-                     <!--<div class= "col-sm-3">
-                         <a href="http://ryanfairist.github.io/retailEcommerce/" target="_blank" class="thumbnail"><img class= "img-responsive" src= "http://i1382.photobucket.com/albums/ah266/ryanfairist/page1a_zps2gcagrlz.jpg"/></a>
-                       </div>
-
-                      <div class= "col-sm-3">
-                         <a href="http://ryanfairist.github.io/retailEcommerce/page2"target="_blank" class="thumbnail"><img class= "img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/page2b_zpszvilhgrq.jpg"/></a>
-                       </div>
-
-                       <div class= "col-sm-3">
-                           <a href="http://ryanfairist.github.io/retailEcommerce/purchase"target="_blank" class="thumbnail"><img class= "img-responsive" src= "http://i1382.photobucket.com/albums/ah266/ryanfairist/page3c_zpsz9v0hhgr.jpg"/></a>
-                         </div>-->
-
-                        <!--<div class="col-md=3">
-                            <div id = "projectDescriptions">
-                              <p><b>Retail Ecommerce</b> </br>Web Application.HTML,and CSS </br>from sample Photoshop Designs</br> shown here<span style= "font-size:12px;">(this e-commerce project is not for mobile devices but to show psd tranlations to code)</span><p></a>
-                          </div>
-                        </div>
-                      </div>-->
-                          
-
-                          <!--second row-->
-
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <p><b>National Paper NYC(local news paper)</br>JavaScript, AngularJS, jQuery, Bootstrap,</br>CSS,and HTML</p>
-                                <a href="http://ryanfairist.github.io/NationalPaperNYC/"target="_blank" class="thumbnail"><img class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/nationaPaper_zpsu3wxupbj.jpg"></a>
-                            </div>
-
-
-                            <div class="col-sm-3">
-                              <p><b>ShoeWish(non-profit site)</br>JavaScript, jQuery, HTML5,</br> CSS3, and Bootstrap</p>
-                               <a href="http://ryanfairist.github.io/ShoeWish/"target="_blank" class="thumbnail"><img class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/ShoeWish_zpshtp9qm2f.jpg"></a></a>
-                            </div>
-
-                            <div class="col-sm-3">
-                              <p><b>Sports Roster(Players Roster)</br> JavaScript, AngularJS, HTML, CSS,</br> and Bootstrap</p>
-                               <a href="http://ryanfairist.github.io/SportsRoster/"target="_blank" class="thumbnail"><img class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/roster_zps8odjis6p.jpg"></a></a> 
-                            </div>
-
-                  
-                            <div class="col-sm-3">
-                              <p><b>FriendlyDogs(blog site)</br>HTML, CSS,</br> and Bootstrap</p>
-                               <a href="http://ryanfairist.github.io/friendlyDogs/"target="_blank" class="thumbnail"><img class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/pup%20view_zpsndfxbkwf.jpg"></a></a> 
-                            </div>
-                          </div>
-
-                            <!--row 2-->
-                            <div class ="row">
-                            <div class="col-sm-3">
-                              <p><b>SaladGame(quiz game)</br>JavaScript, jQuery, Bootstrap,</br>CSS,and HTML.</p>
-                                <a href="http://ryanfairist.github.io/SaladGameJS/"target="_blank" class="thumbnail"><img class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/saladplay_zpsryzu8olr.jpg"></a>
-                            </div>
-
-                              
-                            <div class="col-sm-3">
-                              <p><b>Client Site- Great American Services</br>Bootstrap, CSS3,</br>and HTML5.</p>
-                                <a href="http://www.greatamericanservicesjbj.com"target="_blank" class="thumbnail"><img class="img-responsive" src="http://i1382.photobucket.com/albums/ah266/ryanfairist/gREAMaMERICANsERVICES_zpsrow5jgqv.jpg"></a>
-                            </div>
-
-
-
-
-                          </div>
-                        </section>
-                  
-
-
- <!--Contact-->
-            <div id ="Contact">
-
-              <div class="container text-center">
-                 <p>Contact</p>
-                  <p>RyanFairistRichard@gmail.com</p>
+      <div class="col-sm-4 col-md-3" style="border: 1px solid #FF2169; padding:10px;">
+    <h3 class="hidden-xs" style="margin-top:0px;">Let's make a fantastic webiste ready for Andriod, iOS, and other devices. The world should know who you are. It's time!</h3>
+    <h3 class="text-center visible-xs" style="margin-top:0px;">Let's make a fantastic webiste ready for Andriod, iOS, and other devices. The world should know who you are. It's time!</h3>
+  </div>
+</div>
+</section>
+<div id="examplesHere"></div>
+<div class="white-block"> <h1 class="text-center" style="padding-top:50px;"> Examples</h1></div>
+  <!--pricing with modals-->
+  <section>
+  <div class="inlargies">
+    <div class="col-xs-10 col-sm-4 col-xs-offset-1 col-sm-offset-2 inlargies-block">
+      <!--MODEL MAN COMPOSITE-->
+      <section>
+            <a href="#"  data-toggle="modal" data-target="#manModel"><img src="man_model_composite.jpg" class="img-responsive man-compostite" alt="Los Angeles Mobile" width="300"></a>
+          <div class="modal fade" id="manModel" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="man_model_composite.jpg" class="img-responsive man-compostite" alt="Los Angeles Mobile"/>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
-
-
-
-              <!--Footer-->
-      <div class="footer">
-          <div class="container-fluid">
-            <div id ="moveUp" class="btn btn-default pull-right">
-                <a href="#Home" class="cd-top">Scroll Up</a>
+          </div>
+      </section>
+<!--MODEL Female COMPOSITE-->
+      <section>
+            <a href="#"  data-toggle="modal" data-target="#femaleModel"><img src="model_female_composite.jpg" class="img-responsive femaile-model-compostite"  alt="New York Mobile"width="300"></a>
+          <div class="modal fade" id="femaleModel" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
-                  <footer>
-                    <div class="col pull-left">
-
-                        <h4>Find Me Here<h4>
-                          <a href="https://www.linkedin.com/in/ryanrichard2" target="_blank"><img src="http://i239.photobucket.com/albums/ff261/harrie1978/DISCO%20LIMBURG%20WEBSITE/linkedin-logo.png" height="30">
-                          </a>
-                          <a href ="https://github.com/ryanfairist" target="_blank"><img src="http://i1382.photobucket.com/albums/ah266/ryanfairist/github-logo_zpsxce2rpgy.jpg" height="30"></a>
-                        </div>
-                      <div class="pull-right">
-                          <h4>&copy; RyanFairistRichard</h4>
-                          <h4>RyanFairistRichard@gmail.com</h4>
-                      </div>
-                    </footer>
+                  <div class="modal-body">
+                    <img src="model_female_composite.jpg" class="img-responsive femaile-model-compostite"  alt="New York Mobile">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
+              </div>
+            </div>
+          </div>
+      </section>
+<!--MODEL Fitness COMPOSITE-->
+      <section>
+            <a href="#"  data-toggle="modal" data-target="#fitnessModel">
+                <img src="fitness_composite.jpg" class="img-responsive fitness-compostite"  alt="Chicago Mobile"width="300">
+            </a>
+          <div class="modal fade" id="fitnessModel" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="fitness_composite.jpg" class="img-responsive fitness-compostite"  alt="Chicago Mobile">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    
+    <div class=" col-xs-10 col-sm-4 col-xs-offset-1 col-sm-offset-1 col-md-offset-0 price-inclu">
+          <h2 class="price"><b>Prices may Include:</b></h2>
+          <ul>
+            <li><h3><b>Desktop/laptop and<br/> mobile device layout</b></h3></li>
+            <li><h3><b>Photo retouch</b></h3></li>
+            <li><h3><b>Domain and host set up</b></h3></li>
+            <li><h3><b>6+ months of optional upgrates to your site</b></h3></li>
+            <li><h3><b>Social media SEO</b></h3></li>
+            <li><h3><b>Animation and other features are available</b></h3></li>
+          </ul>
+        </div>
       </div>
-      
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script>
-$(document).ready(function(){
+  </section>
+  </div>
+</div>
+  <section class="how-it-works" id="pricing">
+    <div class="container" style="padding-top:25px;">
+      <h2 class="text-center">How it Works</h2>
+      <div class="col-sm-10 col-sm-offset-1">
+      <div class="col-sm-4">
+        <p class="text-center"><i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i></p>
+        <h3 class="text-center"><b>Step 1</b><br/>You have an idea!</h3>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i></p>
+        <h3 class="text-center"><b>Step 2</b><br/> You have some images.</h3>
+      </div>
+      <div class="col-sm-4">
+        <p class="text-center"><i class="fa fa-hand-spock-o fa-5x" aria-hidden="true"></i></p>
+        <h3 class="text-center"><b>Step 3</b><br/><a href="tel:443-600-0912">Call</a> or <a href="mailto:ryanfairistwebsite@gmail.com?subject=First%20Website%20Request"/>Email</a> Me!</h3>
+      </div>
+    </div></div>
+  </section>
+  </main>
+  <footer id='contactMe'>
+    <section class="about-me-contact">
+      <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2">
+    <img src ="ryan_richard.jpg" class="img-responsive" width="300" style='margin-top:25px'/>
+  </div>
+  <div class="col-xs-10 col-xs-offset-1 col-sm-4">
+    <h3>Give me a call or email me. I am sure we can work out a great deal that meets your needs.</h3>
+    <p> Here are a few technolgies I love.<br/>HTML5 | CSS3 | C#.NET | Bootstrap | JavaScript | JQuery | AMP Google pages </p>
+    <br/><br/>
+    <p><a href="tel:443-600-0912">443.600.0912</a><br/><a href="mailto:ryanfairistwebsite@gmail.com?subject=First%20Website%20Request"/>RyanFairistWebsite@gmail.com</a><br/><a href="https://www.linkedin.com/in/ryanrichard2/" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+    </p>
+  </div>
+  </div>
+  </section>
+  </footer>
+  
+  <script>
 
-    $('.tree img').mouseenter(function() {
-             jQuery(this).effect("bounce", {times: 3}, 500);
-    });
-});
-
+         $(function () {
+            $(window).scroll(function () {
+               
+                    if ($(window).height() > 500) {
+                        
+                         $('#beem-me-up').show();
+                         }else if ($(window).height() < 700) {
+                  $('#beem-me-up').hide();
+                  }
+          
+            })
+         });
+   
 </script>
 </body>
 </html>
+
+<i class="fa fa-toggle-on" aria-hidden="true"></i>
+<i class="fa fa-toggle-off" aria-hidden="true"></i>
+
+
+

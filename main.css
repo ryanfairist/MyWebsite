@@ -1,4 +1,4 @@
-body {
+/*body {
 	font-family:"Oxygen", Arial;
 	background-color:#98004a;
 }
@@ -21,10 +21,10 @@ body {
 
 .jumbotron p {
 	color:#D8284E;
-}
+}*/
 
 /*	nav buttons*/
-.btn-primary{
+/*.btn-primary{
 	background-color: transparent;
 	border-color:#D8284E;
 	color:#fff;
@@ -37,11 +37,11 @@ body {
 	font-weight:bold;
 	background-color:#D8284E;
 	border-color:#fff;
-}
+}*/
 
 /*Projects Portfolio*/
 
-
+/*
 .projects{
 	background-color:#fff;
 	padding-top:10px;
@@ -71,10 +71,10 @@ body {
  	color:#fff;
  	text-align:center;
  	margin-top:15px;
- }
+ }*/
 
 /* Skills Summary*/
-.main p {
+/*.main p {
 	background-color:#fff;
 	text-align:center;
 	color:#f25a57;
@@ -83,10 +83,10 @@ body {
 
 .main{
 	background-color:#fff;
-}
+}*/
 
 /*about me*/
-.main-1 {
+/*.main-1 {
 	padding:50px 30px;
 	font-family: Arial;
 	font-size: 16px;
@@ -100,11 +100,11 @@ body {
 	font-size:10px;
 
 }
-
+*/
 
 /*contact form*/
 
-#Contact {
+/*#Contact {
 	color:#fff;
 	margin-top:25px;
 	font-size: 25px;
@@ -135,9 +135,9 @@ input[type="submit"] {
     border-radius: 3px;
 } 
 
-
+*/
 /*Footer*/
-.footer {
+/*.footer {
 	background-color:transparent;
 	color:#98004a;
 	margin-top:25px;
@@ -166,7 +166,7 @@ visibility:visible;
 	font-size:8px;
 	
 
-}
+}*/
 /*tree Shakers*/
 
 
