@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" data-ember-extension="1">
 <head>
-  <title>Summer Websites</title>
+  <title>Summer Websites NY |MD |DC |CA |USA</title>
    <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="Ryan's website for summer work" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+<meta name="description" content="It's summer time and about time for you to get a mobile webiste (andriod and iphone ready). I can work within your budget to make a website that is awesome for you and your customers. Show me what you like and we will give it a go!"/>
+<link rel="canonical" href="https://www.ryanfairist.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Summer Websites |NY |MD |DC |CA |USA" />
+<meta property="og:description" content="It's summer time and about time for you to get a mobile webiste (andriod and iphone ready). I can work within your budget to make a website that is awesome for you and your customers. Show me what you like and we will give it a go!" />
+<meta property="og:url" content="https://www.ryanfairist.com/" />
+<meta property="og:site_name" content="RyanFairistWebsite" />
+<meta property="og:image" content="https://www.ryanfairist.com/Social_Ryan_Fairist_Website.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="It's summer time and about time for you to get a mobile webiste (andriod and iphone ready). I can work within your budget to make a website that is awesome for you and your customers. Show me what you like and we will give it a go!" />
+<meta name="twitter:title" content="Summer Websites |NY |MD |DC |CA |USA" />
+<meta name="twitter:image" content="https://www.ryanfairist.com/Social_Ryan_Fairist_Website.jpg" />
+
   <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,6 +26,32 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style> 
+.mobile-nav{
+ position:fixed;
+}
+.dropdown-menu{
+ color:#fff;
+ background-color:#000;
+ padding:0px;
+ border-radius: 0px;
+}
+.dropdown-menu li a{
+ color:#fff;
+ background-color:#000;
+}
+.dropdown-menu li a:hover{
+background-color:#23cbda;
+}
+.dropdown-menu a {
+  color:#fff;
+}
+.mobile-nav .hamburger-guy{
+  color:#fff;
+  font-weight:500;
+  padding:5px;
+  background-color:#000;
+}
+
 header .bubble{
   font-size:55px;
   color: #fff;
@@ -26,12 +65,16 @@ header .bubble{
     text-shadow: 1px -1px 0 #faf938, -1px 2px 1px #030425, -2px 4px 1px #ff2169, -3px 6px 1px #23cbda, -4px 8px 1px #23cbda, -5px 10px 1px #23cbda, -6px 12px 1px rgb(255, 33, 105);
  }
  /*, -7px 14px 1px #ff2169, -8px 16px 1px #ffffff, -9px 18px 1px #ffffff, -10px 20px 1px #faf938, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #ff2169, -19px 38px 1px #ff2169, -20px 40px 1px #23cbda, -21px 42px 1px #23cbda, -22px 44px 1px #23cbda, -23px 46px 1px #faf938, -24px 48px 1px #faf938, -25px 50px 1px #ff2169, -26px 52px 1px #ff2169, -27px 54px 1px #23cbda, -28px 56px 1px #23cbda;*/
-
+@media (max-width: 400px) {
+  header .bubble{
+    margin-top:10px;
+  }
+}
 .stripes{
   z-index: -25; 
 }
 .stripe-p{
-  background-color: #FF2169;
+  background-color: #FF1493;
     padding-bottom: 50px;
 }
 .stripe-p:hover{
@@ -44,6 +87,26 @@ header .bubble{
 .stripe-y{
   background-color: #faf938;
     padding-bottom: 28px;
+}
+.div-device{
+  float:right;
+}
+@media (max-width: 767px) {
+  .div-device{
+  float:none;
+}
+}
+.device-img{
+  z-index: 50;
+  position: absolute;
+  margin-top:100px;
+}
+@media (max-width: 767px) {
+.device-img{
+  z-index: 50;
+  position: absolute;
+  margin-top:100px;
+}
 }
 .first-part{
   margin-top:35px;
@@ -67,7 +130,7 @@ main{
 margin-top: 25px;
 }
 }
-.my-nav-item a:hover{
+.my-nav-item a:hover, .my-nav-item a:active{
   background-color:#FF2169;
   color:#fff;
 }
@@ -126,12 +189,12 @@ margin-top: 25px;
 }
 /*includes*/
 .price-inclu {
-  border:1px solid #FF2169;
+  /*border:1px solid #FF2169;*/
   height:480px;
 }
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .price-inclu {
-  border:1px solid #FF2169;
+  /*border:1px solid #FF2169;*/
   height:650px;
   margin-top:15px;
 }
@@ -145,45 +208,50 @@ margin-top: 25px;
   background-color:rgb(192,192,192);opacity:0.4;
   color:#000;
   display: none; 
-  margin-left:70%; 
+  margin-left:75%; 
   z-index: 500;
  }  
 </style>
 <head>
 <body>
+  <section class="mobile-nav visible-xs">
+     <div class="dropdown">
+    <div class=" dropdown-toggle hamburger-guy"  data-toggle="dropdown"><b>&#9776;</b>
+    </div>
+    <ul class="dropdown-menu">
+      <li><a class="" href="#home">Home</a></li>
+      <li><a href="#examplesHere">Examples</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contactMe">Contact</a></li>
+    </ul>
+  </div>
+</div>
+  </section>
+  
+  <img src ="mobile_summer-hero.jpg" class="visible-xs img-responsive" alt="Summer Webistes"/> 
+ 
   <h1 style="display:none;">Summer Mobile Websites</h1>
     <header id="home">
-    <div class="container">
+    <div class="container hidden-xs">
       <div class="col-sm-9 col-sm-offset-2">
         <p class="text-center bubble">Let's Make 
         <br/> Your Website Mobile
         <br/> this Summer!</p>
          </div>
   </div>
-  <div class="col-sm-5" style="float: right;">
-    <img src="palm_tree.png" class="image-repsonsivet" alt="model portfolio website palm tree" style="
-    z-index: 50;position: absolute;"></div>
-    <div class="stripes">
+  <div class="col-sm-5 div-device hidden-xs">
+     <img src="multi_device.png" class="image-responsive device-img" alt="model portfolio website computer, tablet, cell phone" width="400">
+ </div>
+    <div class="stripes hidden-xs">
       <div class="stripe-b"></div>
       <div class="stripe-p"></div>
       <div class="stripe-y"></div>
       <div class="stripe-b"></div>
       <div class="stripe-p"></div>
       <div class="stripe-y"></div>
-      <div class="stripe-b">
-        <div class="row">
-          <div class="col-xs-12">
-        <div class=" visible-xs col-xs-4 col-xs-offset-2 my-nav-item" >
-          <a class="" href="#examplesHere">Examples</a>
-        </div>
-        <div class=" visible-xs col-xs-offset-1 col-sm-4 my-nav-item" >
-          <a class="" href="#contactMe" style="margin-left: 15px;">Contact</a>
-        </div>
-      </div>
-      </div>
-      </div>
-      <div class="stripe-p"></div>
-      <div class="stripe-y"></div>
+      <div class="stripe-b"></div>
+      <div class="stripe-p hidden-xs"></div>
+      <div class="stripe-y hidden-xs"></div>
     </div>
   <header>
   <nav>
@@ -191,16 +259,16 @@ margin-top: 25px;
       <div class="row">
       <div class="col-sm-offset-2">
         <div class="col-sm-3 my-nav-item">
-          <a class="" href="#home">Home</a>
+          <a href="#home">Home</a>
         </div>
         <div class="col-sm-3 my-nav-item">
-          <a class="" href="#examplesHere">Examples</a>
+          <a href="#examplesHere">Examples</a>
         </div>
         <div class="col-sm-3 my-nav-item">
-          <a class="" href="#pricing">Pricing</a>
+          <a href="#pricing">Pricing</a>
         </div>
         <div class="col-sm-3 my-nav-item">
-          <a class="" href="#contactMe">Contact</a>
+          <a href="#contactMe">Contact</a>
         </div>
       </div>
       </div>
@@ -223,7 +291,7 @@ margin-top: 25px;
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
-          <a href="#home" class="btn btn-default " id="beem-me-up">Scroll<br/>Up</a>
+          <a href="#home" class="btn btn-default " id="beem-me-up"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
@@ -329,7 +397,7 @@ margin-top: 25px;
             <li><h3><b>Desktop/laptop and<br/> mobile device layout</b></h3></li>
             <li><h3><b>Photo retouch</b></h3></li>
             <li><h3><b>Domain and host set up</b></h3></li>
-            <li><h3><b>6+ months of optional upgrates to your site</b></h3></li>
+            <li><h3><b>6+ months of optional upgrades to your site</b></h3></li>
             <li><h3><b>Social media SEO</b></h3></li>
             <li><h3><b>Animation and other features are available</b></h3></li>
           </ul>
@@ -340,7 +408,7 @@ margin-top: 25px;
 </div>
   <section class="how-it-works" id="pricing">
     <div class="container" style="padding-top:25px;">
-      <h2 class="text-center">How it Works</h2>
+      <h2 class="text-center"><b>How it Works</b></h2>
       <div class="col-sm-10 col-sm-offset-1">
       <div class="col-sm-4">
         <p class="text-center"><i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i></p>
