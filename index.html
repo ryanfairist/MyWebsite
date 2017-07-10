@@ -26,31 +26,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style> 
-.mobile-nav{
- position:fixed;
+.left-mobile-nav, .right-mobile-nav{
+  height:40px;
+  background-color:#faf938;
+  text-align: center;
 }
-.dropdown-menu{
- color:#fff;
- background-color:#000;
- padding:0px;
- border-radius: 0px;
+.left-mobile-nav:hover, .right-mobile-nav:hover{
+  height:40px;
+  background-color:#fff;
+  text-align: center;
 }
-.dropdown-menu li a{
- color:#fff;
- background-color:#000;
+.left-mobile-nav a, .right-mobile-nav a{
+  text-decoration: none;
+  margin-top:25px;
 }
-.dropdown-menu li a:hover{
-background-color:#23cbda;
-}
-.dropdown-menu a {
-  color:#fff;
-}
-.mobile-nav .hamburger-guy{
-  color:#fff;
-  font-size:25px;
-  font-weight:500;
-  padding:5px;
-  background-color:#000;
+.left-mobile-nav p, .right-mobile-nav p{
+  margin-top:10px;
 }
 
 header .bubble{
@@ -214,19 +205,10 @@ margin-top: 25px;
 </style>
 <head>
 <body>
-  <section class="mobile-nav visible-xs">
-     <div class="dropdown">
-    <div class=" dropdown-toggle hamburger-guy"  data-toggle="dropdown">&#9776;
-    </div>
-    <ul class="dropdown-menu">
-      <li><a href="#examplesHere">Examples</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contactMe">Contact</a></li>
-    </ul>
-  </div>
-</div>
-  </section>
-  
+  <section>
+    <a href="#examplesHere"><div class="col-xs-6 visible-xs left-mobile-nav">
+      <p>Examples</p></div></a>
+    <a href="#contactMe"><div class="col-xs-6 visible-xs right-mobile-nav"><p>Contact</p></div></a>
   <img src ="mobile_summer-hero.jpg" class="visible-xs img-responsive" alt="Summer Webistes"/> 
  
   <h1 style="display:none;">Summer Mobile Websites</h1>
